@@ -1,0 +1,26 @@
+APPINVENTIVE TECHNOLOGIES
+
+Date Interview:- 25 Jan 2025
+
+->Technical Interview
+
+Q1. what is OOPs?
+ans- OOPs stands for Object-Oriented Programming System. It is a programming paradigm based on the concept of "objects", which can contain data and code to manipulate that data.
+
+Q2. what are the key principles of OOPs?
+ans- The key principles of OOPs are:
+
+**Encapsulation:** Bundling the data and methods that operate on the data within one unit, e.g., a class.
+**Abstraction:** Hiding the complex implementation details and showing only the necessary features of an object.
+**Inheritance:** Creating new classes from existing ones, allowing for code reuse and the creation of a hierarchical relationship between classes.
+**Polymorphism:** Allowing objects to be treated as instances of their parent class rather than their actual class, enabling one interface to be used for a general class of actions.
+
+Q3.what are types of Inheritance?
+ans- The types of inheritance in OOPs are:
+
+1. **Single Inheritance**: A class inherits from one superclass.
+2. **Multiple Inheritance**: A class inherits from more than one superclass.
+3. **Multilevel Inheritance**: A class inherits from a superclass, which in turn inherits from another superclass.
+4. **Hierarchical Inheritance**: Multiple classes inherit from a single superclass.
+5. **Hybrid Inheritance**: A combination of two or more types of inheritance.
+
