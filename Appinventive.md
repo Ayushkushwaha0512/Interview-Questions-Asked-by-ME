@@ -1,14 +1,14 @@
-APPINVENTIVE TECHNOLOGIES
+# APPINVENTIVE TECHNOLOGIES
 
-Date Interview:- 25 Jan 2025
+# Date Interview:- 25 Jan 2025
 
-->Technical Interview
+# ->Technical Interview
 
-Q1. what is OOPs?
+## Q1. what is OOPs?
 ans- OOPs stands for Object-Oriented Programming System. It is a programming paradigm based on the concept of 
      "objects", which can contain data and code to manipulate that data.
 
-Q2. what are the key principles of OOPs?
+## Q2. what are the key principles of OOPs?
 ans- The key principles of OOPs are:
 
     **Encapsulation:** Bundling the data and methods that operate on the data within one unit, e.g., a class.
@@ -18,7 +18,7 @@ ans- The key principles of OOPs are:
     **Polymorphism:** Allowing objects to be treated as instances of their parent class rather than their actual class,
                     enabling one interface to be used for a general class of actions.
 
-Q3.what are types of Inheritance?
+## Q3.what are types of Inheritance?
 ans- The types of inheritance in OOPs are:
 
     1. **Single Inheritance**: A class inherits from one superclass.
@@ -27,13 +27,13 @@ ans- The types of inheritance in OOPs are:
     4. **Hierarchical Inheritance**: Multiple classes inherit from a single superclass.
     5. **Hybrid Inheritance**: A combination of two or more types of inheritance.
 
-Q4. Why Multiple inheritance not support in java?
+## Q4. Why Multiple inheritance not support in java?
 ans- Multiple inheritance is not supported in Java to avoid complexity and simplify the design. The main reason is
      to prevent the "Diamond Problem," where a class can inherit from two classes that have a common superclass, leading
      to ambiguity in method resolution. Instead, Java supports multiple inheritance of type through interfaces, allowing 
      a class to implement multiple interfaces.
 
-Q5. what is interface? write their example.
+## Q5. what is interface? write their example.
 ans- An interface in Java is a reference type, similar to a class, that can contain only constants, method signatures, 
      default methods, static methods, and nested types. Interfaces cannot contain instance fields or constructors. They 
      are used to specify a set of methods that a class must implement.
@@ -67,7 +67,7 @@ Example:
     }
 
 
-Q6. How we determine which interface method is called when a class inherits from two interfaces with the same method?
+## Q6. How we determine which interface method is called when a class inherits from two interfaces with the same method?
 ans- When a class inherits from two interfaces that have the same method, the class must provide an implementation for
      that method. The implementation will be the same for both interfaces. If you need to differentiate between the two,
      you can use default methods in interfaces or create separate methods in the implementing class.
@@ -102,7 +102,7 @@ ans- When a class inherits from two interfaces that have the same method, the cl
     }
 
 
-Q7. what is the use of super keyword in java?
+## Q7. what is the use of super keyword in java?
 ans- In Java, the super keyword is a reference variable used to access the immediate parent class's methods, variables, or
      constructors. It is commonly used in inheritance to interact with the parent class. Below are its specific uses:
       
@@ -122,7 +122,7 @@ ans- In Java, the super keyword is a reference variable used to access the immed
          the same name, super ensures that the parent class's member is accessed instead of the subclass's member.
 
 
-Q8. what is Polymorphism?
+## Q8. what is Polymorphism?
 ans- Polymorphism is one of the core concepts of object-oriented programming (OOP) that allows objects of different classes to
      be treated as objects of a common superclass. It enables a single interface to represent different underlying forms (data types).
      There are two types of polymorphism in Java:
@@ -182,7 +182,7 @@ ans- Polymorphism is one of the core concepts of object-oriented programming (OO
 
 
 
-Q9. Difference between LinkedList and arraylist.
+## Q9. Difference between LinkedList and arraylist.
 ans- a-> Underlying Data Structure:
             ArrayList: Uses a dynamic array to store elements.
             LinkedList: Uses a doubly linked list to store elements.
@@ -204,7 +204,7 @@ ans- a-> Underlying Data Structure:
             ArrayList: Preferred when there are more get and set operations.
             LinkedList: Preferred when there are more insertions and deletions in the middle of the list.
 
-Q10. what is map in java?
+## Q10. what is map in java?
 ans- A Map in Java is an object that maps keys to values. It cannot contain duplicate keys, and each key can map to at most one value.
 
         Key Characteristics:
@@ -248,7 +248,7 @@ ans- A Map in Java is an object that maps keys to values. It cannot contain dupl
     }
 
 
-Q11. which data structure use for a find a word in a book?
+## Q11. which data structure use for a find a word in a book?
 ans- To find a word in a book, the most commonly used data structure is a Trie (also known as a prefix tree).
 
     Trie (Prefix Tree):
@@ -294,7 +294,7 @@ ans- To find a word in a book, the most commonly used data structure is a Trie (
     }
 
 
-Q12. what is Exceptions in java?
+## Q12. what is Exceptions in java?
 ans- Exceptions in Java are events that disrupt the normal flow of the program's instructions. They are used to handle errors and 
      other exceptional events in a controlled manner.
 
@@ -345,7 +345,7 @@ ans- Exceptions in Java are events that disrupt the normal flow of the program's
     }
 
 
-Q13. Difference Between final and finally in Exception Handling.
+## Q13. Difference Between final and finally in Exception Handling.
 ans- Final:-
         A keyword used to define constants, prevent method overriding, and prevent inheritance.
         example:
@@ -380,7 +380,7 @@ ans- Final:-
             }
 
 
-Q14. Difference between static and final keyword in java.
+## Q14. Difference between static and final keyword in java.
 ans- Static:-
         Variable: A static variable is shared among all instances of a class. It belongs to the class, not to any specific instance.
         Method: A static method belongs to the class rather than any instance. It can be called without creating an instance of the class.
@@ -416,7 +416,7 @@ ans- Static:-
                 }
             }
 
-Q15. Difference Between Switch and if-else.
+## Q15. Difference Between Switch and if-else.
 ans:- if-else:
         Used for conditional branching based on boolean expressions.
         Can handle complex conditions involving logical operators (&&, ||, !).
@@ -449,11 +449,11 @@ ans:- if-else:
         }
 
     
-Q16. Why switch is Faster than if-else?
+## Q16. Why switch is Faster than if-else?
 ans:- Jump Table Optimization:
         -> The switch statement can be optimized by the compiler using a jump table. This allows the program to directly jump to the case
          that matches the switch expression, making it faster than evaluating multiple if-else conditions sequentially.
         -> In contrast, if-else statements are evaluated sequentially, which means each condition is checked one by one until a match is
          found or all conditions are exhausted.
 
-Q17. 
+ 
