@@ -147,3 +147,33 @@ Examples:
             }
         }
     }
+
+
+## Q7. Write to find the Occurrences of the Integer in array.
+## Answer:-
+
+    import java.util.HashMap;
+    import java.util.Map;
+
+    public class IntegerOccurrences{
+        public static void main(String[] args){
+            int[] array = {1, 2, 3, 4, 2, 3, 1, 2, 4, 5};
+            // Create a Map to store integer occurrences
+            Map<Integer, Integer> occurrencesMap = new HashMap<>();
+
+            // Iterate through the array and populate the map
+            for (int num : array) {
+                // If the number is already in the map, increment its count
+                if (occurrencesMap.containsKey(num)) {
+                occurrencesMap.put(num, occurrencesMap.get(num) + 1);
+                } else {
+                    // Otherwise, add the number to the map with a count of 1
+                    occurrencesMap.put(num, 1);
+                }
+            }
+            // Print the integer and its occurrences
+            for (Map.Entry<Integer, Integer> entry : occurrencesMap.entrySet()) {
+                System.out.println("Integer: " + entry.getKey() + ", Occurrences: " + entry.getValue());
+            }
+        }
+    }
