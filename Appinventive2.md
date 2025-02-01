@@ -38,7 +38,7 @@ Interfaces are used to specify a set of methods that a class must implement. The
             }
         }
 
-## Q2. why we need encapsulation whem we have abstraction and vice versa?
+## Q2. why we need encapsulation when we have abstraction and vice versa?
 ## Answer:-
 
 Encapsulation: It ensure that the internal state of an object is protected and can only be modified through controlled methods. This prevents unintended interfarence and misuse of the data. It provide a way to enforce rules and constraints on th data, ensuring data integrity and security.
