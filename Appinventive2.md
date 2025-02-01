@@ -79,3 +79,48 @@ Exception Handling Mechanism:
 | Recovery          | Program can recover from exceptions.           | Program usually cannot recover from errors.   |
 | Occurrence        | Due to programmatic issues.                    | Due to system-level issues.                   |
 
+
+## Q5. Explain Types of Unchecked and Checked Exceptions.
+## Answer:-
+### Checked Exceptions:
+Checked exceptions are exceptions that are checked at compile-time. This means the compiler ensures that these exceptions are either handled using a `try-catch` block or declared in the method signature using the `throws` keyword.
+They typically represent scenarios outside the program's control, such as I/O errors, database issues, or file access problems.
+
+Examples:
+`IOException` (e.g., file not found)
+`SQLException` (e.g., database connection issues)
+`ClassNotFoundException` (e.g., class not found at runtime)
+
+try {
+    FileReader file = new FileReader("file.txt");
+} catch (IOException e) {
+    System.out.println("File not found: " + e.getMessage());
+}
+
+### Unchecked  Execptions:
+Unchecked exceptions are exceptions that are not checked at compile-time. They occur during runtime and are usually caused by logical errors in the code.
+They represent programming errors, such as invalid arguments, null pointer access, or arithmetic issues.
+
+Examples:
+`NullPointerException` (e.g., accessing a null object)
+`ArrayIndexOutOfBoundsException` (e.g., accessing an invalid array index)
+`ArithmeticException` (e.g., division by zero)
+
+int[] arr = {1, 2, 3};
+try {
+    System.out.println(arr[5]); // This will throw ArrayIndexOutOfBoundsException
+} catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println("Invalid array index: " + e.getMessage());
+}
+
+
+### Key Differences:
+|Feature             | Checked Exceptions               |Unchecked Exceptions    |
+|--------------------|----------------------------------|------------------------|
+|Compile-time check  |checked by the compiler           | Not checked by the compiler|
+|Inheritance         |Sublcasses of `Exceptions`(but not `RuntimeExecptio`)|Subclasses of `RuntimeExceptions` or `Error`|
+|Handling            | Must be handled or declared      | Optional to handle     |
+|Example             | `IOException`, `SQLException`    | `NullPointerException`, `ArithmeticException`|
+|Cause               | External factors (e.g., file not found)| Programming errors (e.g., logic bugs) |
+
+
