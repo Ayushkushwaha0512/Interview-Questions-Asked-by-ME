@@ -91,11 +91,11 @@ Examples:
 `SQLException` (e.g., database connection issues)
 `ClassNotFoundException` (e.g., class not found at runtime)
 
-try {
-    FileReader file = new FileReader("file.txt");
-} catch (IOException e) {
-    System.out.println("File not found: " + e.getMessage());
-}
+    try {
+        FileReader file = new FileReader("file.txt");
+    } catch (IOException e) {
+        System.out.println("File not found: " + e.getMessage());
+    }
 
 ### Unchecked  Execptions:
 Unchecked exceptions are exceptions that are not checked at compile-time. They occur during runtime and are usually caused by logical errors in the code.
@@ -106,12 +106,12 @@ Examples:
 `ArrayIndexOutOfBoundsException` (e.g., accessing an invalid array index)
 `ArithmeticException` (e.g., division by zero)
 
-int[] arr = {1, 2, 3};
-try {
-    System.out.println(arr[5]); // This will throw ArrayIndexOutOfBoundsException
-} catch (ArrayIndexOutOfBoundsException e) {
-    System.out.println("Invalid array index: " + e.getMessage());
-}
+    int[] arr = {1, 2, 3};
+    try {
+        System.out.println(arr[5]); // This will throw ArrayIndexOutOfBoundsException
+    } catch (ArrayIndexOutOfBoundsException e) {
+        System.out.println("Invalid array index: " + e.getMessage());
+    }
 
 
 ### Key Differences:
