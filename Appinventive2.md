@@ -66,3 +66,16 @@ Exception Handling Mechanism:
 4. throw: Used to explicitly throw an exception.
 5. throws: Used in method signatures to declare that a method might throw exceptions.
 
+
+## Q4. what is difference between exception and error?
+## Answer:-
+| Aspect            | Exception                                      | Error                                         |
+|-------------------|------------------------------------------------|-----------------------------------------------|
+| Definition        | An event that disrupts the normal flow of the program and can be handled. | A serious problem that occurs during the execution of a program and cannot be handled. |
+| Hierarchy         | Subclass of `Throwable`.                       | Subclass of `Throwable`.                      |
+| Types             | Checked Exceptions, Unchecked Exceptions.      | Typically related to the environment (e.g., `OutOfMemoryError`, `StackOverflowError`). |
+| Handling          | Can be caught and handled using try-catch blocks. | Generally not caught or handled by the application. |
+| Examples          | `IOException`, `SQLException`, `NullPointerException`, `ArrayIndexOutOfBoundsException`. | `OutOfMemoryError`, `StackOverflowError`.     |
+| Recovery          | Program can recover from exceptions.           | Program usually cannot recover from errors.   |
+| Occurrence        | Due to programmatic issues.                    | Due to system-level issues.                   |
+
