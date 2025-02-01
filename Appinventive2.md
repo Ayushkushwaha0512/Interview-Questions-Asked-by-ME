@@ -124,3 +124,26 @@ Examples:
 |Cause               | External factors (e.g., file not found)| Programming errors (e.g., logic bugs) |
 
 
+## Q6. Print this pattern.
+1
+3 2
+6 5 4
+10 9 8 7
+## Answer:-
+    public class Pattern {
+        public static void main(String[] args) {
+            int rows = 4; // Number of rows in the pattern
+            int currentNumber = 0; // Variable to keep track of the current number
+
+            for (int i = 1; i <= rows; i++) {
+                currentNumber += i; // Calculate the starting number for the current row
+                int temp = currentNumber; // Temporary variable to print numbers in descending order
+
+                for (int j = 1; j <= i; j++) {
+                    System.out.print(temp + " "); // Print the number
+                    temp--; // Decrement the number
+                }
+                System.out.println(); // Move to the next line after each row
+            }
+        }
+    }
