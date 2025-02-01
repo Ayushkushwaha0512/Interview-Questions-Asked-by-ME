@@ -39,8 +39,11 @@
         }
 
 ## Q2. why we need encapsulation whem we have abstraction and vice versa?
-Answer
+Answer:-
+
 Encapsulation: It ensure that the internal state of an object is protected and can only be modified through controlled methods. This prevents unintended interfarence and misuse of the data. It provide a way to enforce rules and constraints on th data, ensuring data integrity and security.
+
 Abstraction: It allows developers to wroks with the objects at a higher level of complexity by focusing on the essential features and ignoring the implementation details. It helps in desinging systems that are easier to understand and maintain by providing clear interfaces and reducing complexity.
+
 Basically encapsulation and abstraction are complementary concepts in object-oriented programming .Encapsulation ensures data protection and controlled access, while abstraction simplifies complex systems by focusing on essential features. Both are essential for creating robust, maintainable, and  scalable software.
 
