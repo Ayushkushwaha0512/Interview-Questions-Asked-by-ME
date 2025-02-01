@@ -125,10 +125,10 @@ Examples:
 
 
 ## Q6. Print this pattern.
-1
-3 2
-6 5 4
-10 9 8 7
+## 1
+## 3 2
+## 6 5 4
+## 10 9 8 7
 ## Answer:-
     public class Pattern {
         public static void main(String[] args) {
